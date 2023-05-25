@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ArtistiComponent } from './artisti/artisti.component';
 import { BraniComponent } from './brani/brani.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: 'artisti', component: ArtistiComponent},
   { path: 'brani', component: BraniComponent},
-  { path: '', redirectTo: '/brani', pathMatch:'full'}
+  { path: 'HOME', component: HomeComponent},
+  { path: '', redirectTo: '/HOME', pathMatch:'full'}
 ];
 
 
